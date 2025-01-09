@@ -1,120 +1,56 @@
-* {
+/* Estilo global: Fondo negro y texto blanco */
+body {
+    background-color: #000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    font-family: Arial, sans-serif; /* Fuente estándar */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-align: center; /* Centrar todo el texto */
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
+/* Título principal */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 50px 20px; /* Espacio alrededor del título */
 }
 
-header .logo h1 {
-    font-size: 2.5rem;
+h1 {
+    font-size: 3rem; /* Tamaño grande para el título */
+    margin: 0; /* Eliminar margen por defecto */
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+/* Descripción del artista */
+.about {
+    padding: 40px 20px; /* Espacio alrededor del texto */
+    font-size: 1.5rem; /* Tamaño de letra mediano */
+    max-width: 800px; /* Limitar el ancho del texto */
+    margin: 0 auto; /* Centrar el contenido */
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #f4b400;
-}
-
-.hero {
-    background-image: url('otro.png.JPG'); /* Cambia la ruta de la imagen */
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
+/* Estilo para los enlaces de redes sociales */
+.social-links {
     padding: 20px;
 }
 
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
+.social-links p {
     font-size: 1.2rem;
-    margin-top: 10px;
 }
 
-.cta-buttons {
-    margin-top: 30px;
+.social-links a {
+    color: white; /* Enlaces en blanco */
+    font-size: 1.5rem; /* Tamaño de letra grande */
+    text-decoration: none; /* Eliminar subrayado */
+    margin: 10px; /* Separación entre enlaces */
+    display: inline-block; /* Para alinear los enlaces en una línea */
 }
 
-.cta {
-    background-color: #f4b400;
-    padding: 10px 30px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
+/* Estilo para los enlaces cuando el ratón pasa sobre ellos */
+.social-links a:hover {
+    color: #ccc; /* Cambiar color al pasar el ratón */
 }
 
-.cta:hover {
-    background-color: #f1a800;
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about, .platforms {
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    background-color: #fff;
-}
-
-.platform-icons a {
-    margin: 10px;
-}
-
-.platform-icons img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
-}
-
-.platform-icons img:hover {
-    transform: scale(1.1);
-}
-
+/* Estilo para el pie de página */
 footer {
-    text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-footer p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    background-color: #111; /* Fondo oscuro para el pie de página */
 }
