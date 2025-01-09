@@ -1,35 +1,156 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IM BZ 4</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #FFD700;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            position: relative;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transform: scale(1.2);
+        }
+
+        .title-top, .title-bottom {
+            font-family: Impact, Arial Black, sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            position: relative;
+            transform: perspective(500px) rotateX(20deg);
+            transform-origin: center;
+        }
+
+        .title-top {
+            font-size: 12vw;
+            background: linear-gradient(to bottom, #FFA500 0%, #FF8C00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 
+                2px 2px 0px #FF4500,
+                -2px -2px 0px #FF4500,
+                2px -2px 0px #FF4500,
+                -2px 2px 0px #FF4500;
+            margin-bottom: -0.1em;
+            letter-spacing: 0.05em;
+        }
+
+        .title-bottom {
+            font-size: 16vw;
+            background: linear-gradient(to bottom, #FFA500 0%, #FF8C00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 
+                2px 2px 0px #FF4500,
+                -2px -2px 0px #FF4500,
+                2px -2px 0px #FF4500,
+                -2px 2px 0px #FF4500;
+            letter-spacing: 0.05em;
+        }
+
+        /* Rest of the styles remain the same */
+        .content {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 0;
+        }
+
+        .social-link {
+            color: #FF8B00;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            padding: 12px 24px;
+            border: 2px solid #FF8B00;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .social-link:hover {
+            background-color: #FF8B00;
+            color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #FF8B00;
+            color: #FF8B00;
+        }
+
+        section {
+            margin: 60px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Título de la página -->
-    <header>
-        <h1>IM BZ 4</h1>
-    </header>
-
-    <!-- Descripción del artista -->
-    <div class="about">
-        <p>IM BZ 4 es un artista emergente dentro de la escena indie, buscando hacerse un nombre en la industria musical. Con un estilo único y una pasión incansable por la música, IM BZ 4 está decidido a compartir su visión y sonido con el mundo. Si buscas algo fresco y auténtico, sigue su viaje y acompáñalo en su camino hacia el reconocimiento.</p>
+    <div class="hero">
+        <div class="title-container">
+            <div class="title-top">IM</div>
+            <div class="title-bottom">BZ 4</div>
+        </div>
     </div>
 
-    <!-- Enlaces a las redes sociales -->
-    <div class="social-links">
-        <p>Sigue a IM BZ 4 en sus redes sociales:</p>
-        <a href="https://soundcloud.com" target="_blank">SoundCloud</a>
-        <a href="https://youtube.com" target="_blank">YouTube</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+    <div class="content">
+        <section>
+            <p>En el corazón de la escena indie, IM BZ 4 emerge con guitarras etéreas y sintetizadores vintage. Sus melodías envolventes y letras introspectivas crean paisajes sonoros que evocan a Tame Impala y Beach House, mientras mantiene una identidad única y personal.</p>
+        </section>
+
+        <section>
+            <p>Grabando desde su estudio casero, cada canción es un viaje por atmósferas dream pop y shoegaze. Sus ritmos hipnóticos se fusionan con reverberaciones infinitas, creando un sonido que flota entre lo experimental y lo accesible.</p>
+        </section>
+
+        <section>
+            <p>Con influencias que van desde el indie rock clásico hasta la electrónica experimental, IM BZ 4 construye canciones que son tanto personales como universales. Su música es un testimonio del poder del DIY y la producción independiente, donde cada track es un mundo sonoro por descubrir.</p>
+        </section>
+
+        <section>
+            <div class="social-links">
+                <a href="#" class="social-link">SoundCloud</a>
+                <a href="#" class="social-link">YouTube</a>
+            </div>
+        </section>
     </div>
 
-    <!-- Derechos reservados -->
-    <footer>
-        <p>&copy; 2025 IM BZ 4. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <p>Todos los derechos reservados para IM BZ 4</p>
     </footer>
-
 </body>
 </html>
