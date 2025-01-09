@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f4b400;
+}
+
+.hero {
+    background-image: url('ruta-a-imagen-principal.jpg'); /* Cambia la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.cta {
+    background-color: #f4b400;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #f1a800;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .platforms {
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #fff;
+}
+
+.platform-icons a {
+    margin: 10px;
+}
+
+.platform-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.platform-icons img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
