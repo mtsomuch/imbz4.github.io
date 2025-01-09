@@ -41,7 +41,7 @@ header nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('ruta-a-imagen-principal.jpg'); /* Cambia la ruta de la imagen */
+    background-image: url('principal.jpg'); /* Cambia la ruta de la imagen */
     background-size: cover;
     background-position: center;
     height: 80vh;
